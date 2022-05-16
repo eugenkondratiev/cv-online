@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/content-section.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <title>CV.EugenKondratiev</title>
 </head>
 
@@ -12,21 +17,21 @@
     <!--mainwrapper-->
     <div class="main-wrapper">
         <!--- main-content-->
-        <main>
+        <main class="main-content">
             <!--about myself-->
-            <div>
-                <h2>
+            <div class="about-section">
+                <h2 class="about-position">
                     Front-End developer
                 </h2>
-                <h1>
+                <h1 class="about-name">
                     Eugen Kondratiev
                 </h1>
-                <p>
+                <p class="about-description">
                     Looking towards carreer in Frontend or Full-stack development, either using my previous experience
                     or in brand new domains.
                     Seeking of applied language led me to JavaScript / Node.js and to web development.
                 </p>
-                <p>
+                <p class="about-description">
                     14+ years in industrial automation. DCS/PLC/SCADA programming, system integration, maintenance,
                     algorimization, work with global teams and more than dozen vendors, dozens of projects.
 
@@ -34,39 +39,49 @@
             </div>
 
             <!--projects-->
-            <div>
-                <h3>Projects</h3>
-                <ol>
-                    <li>
-                        <a href="https://kes-pefl.netlify.app/cups" target="_blank" rel="noopener noreferrer">
-                            https://kes-pefl.netlify.app/cups
-                            ...[ React.js, MongoDB, netlify-severless ]
-                        </a>
+            <div class="project-section">
+                <h3 class="title">Projects</h3>
+                <ol class="projects-list">
+                    <li class="project-item">
+                        <span class="project-option">
+                            <a href="https://kes-pefl.netlify.app/cups" target="_blank" rel="noopener noreferrer">
+                                https://kes-pefl.netlify.app/cups
+                            </a>
+                            ...<span class="project-bracket"> [</span> React.js, MongoDB, netlify-severless <span
+                                class="project-bracket"> ]</span>
+                        </span>
                     </li>
-                    <li>
-                        <a href="http://95.158.44.52:3001/2" target="_blank" rel="noopener noreferrer">
-                            http://95.158.44.52:3001/2
-                            ...........[ HTML, CSS, WebSockets, Express.js, MySQL]
-                        </a>
+                    <li class="project-item">
+                        <span class="project-option">
+                            <a href="http://95.158.44.52:3001/2" target="_blank" rel="noopener noreferrer">
+                                http://95.158.44.52:3001/2
+                            </a>
+                            ...................<span class="project-bracket"> [</span> HTML, CSS, WebSockets,
+                            Express.js, MySQL<span class="project-bracket"> ]</span>
+                        </span>
                     </li>
-                    <li>
+                    <li class="project-item">
+                        <span class="project-option">
 
-                        <a href="https://github.com/eugenkondratiev/kes-pefl-playersparser" target="_blank"
-                            rel="noopener noreferrer">
-                            Web parser
-                            ...................................[ Node.js , Nightmare.js]
-                        </a>
+                            <a href="https://github.com/eugenkondratiev/kes-pefl-playersparser" target="_blank"
+                                rel="noopener noreferrer">
+                                Web parser
+                            </a>
+                            ..................................................
+                            <span class="project-bracket"> [</span> Node.js , Nightmare.js<span class="project-bracket">
+                                ]</span>
+                        </span>
                     </li>
                 </ol>
             </div>
             <!-- work -->
-            <div>
-                <h3>Work Experience</h3>
+            <div class="work-section">
+                <h3 class="title">Work Experience</h3>
                 <!-- Freelance -->
                 <div>
-                    <h4>Full-stack developer <span>Freelance</span></h4>
-                    <p>September 2018 - up to now | Ukraine</p>
-                    <ul>
+                    <h4>Full-stack developer <span class="company-name">Freelance</span></h4>
+                    <p class="work-period">September 2018 - up to now <span> | </span> Ukraine</p>
+                    <ul class="work-list">
                         <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. </li>
                         <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
@@ -76,9 +91,9 @@
                 </div>
                 <!-- Chief automation engineer -->
                 <div>
-                    <h4>Chief automation engineer <span>Ecoteploresurs</span></h4>
-                    <p>March 2018 - up to now | Ukraine</p>
-                    <ul>
+                    <h4>Chief automation engineer <span class="company-name">Ecoteploresurs</span></h4>
+                    <p class="work-period">March 2018 - up to now <span> | </span> Ukraine</p>
+                    <ul class="work-list">
                         <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod labore et dolore
                             magna aliqua. </li>
                         <li>Quis ipsum suspendisse ultrices gravida.</li>
@@ -87,9 +102,9 @@
                 </div>
                 <!-- Industrial automation programmer -->
                 <div>
-                    <h4>Industrial automation programmer <span>Sautcom ltd, KTS ltd</span></h4>
-                    <p>March 2008 - March 2018 | Ukraine</p>
-                    <ul>
+                    <h4>Industrial automation programmer <span class="company-name">Sautcom ltd, KTS ltd</span></h4>
+                    <p class="work-period">March 2008 - March 2018 <span> | </span> Ukraine</p>
+                    <ul class="work-list">
                         <li>10 years in system integration mostly as a progammer. DCS/PLC/SCADA programming,
                             algorimization </li>
                         <li>RockwelAutomation, Siemens, Schneider , Mitsubishi SCADA/PLC. ABB DCS. CoDeSys</li>
@@ -99,9 +114,9 @@
                 </div>
                 <!-- Chief automation programmer -->
                 <div>
-                    <h4>Chief automation programmer <span>Metinvest PJSC AZOVSTAL </span></h4>
-                    <p>June 2003 - March 2008 | Ukraine</p>
-                    <ul>
+                    <h4>Chief automation programmer <span class="company-name">Metinvest PJSC AZOVSTAL </span></h4>
+                    <p class="work-period">June 2003 - March 2008 <span> | </span> Ukraine</p>
+                    <ul class="work-list">
                         <li>Control systems maintenance in Blast-furnace department </li>
                         <li>Several projects created and refactored</li>
                         <li>RockwelAutomation, Siemens, Schneider SCADA/PLC.</li>
@@ -110,62 +125,62 @@
                 </div>
             </div>
             <!-- Education -->
-            <div>
-                <h3>Educaton</h3>
-                <div>
-                    <h4><span>Pre-Azov State Technical University</span></h4>
-                    <h5>Process automation</h5>
-                    <p>September 1999 - June 2004 | Mariupol, Ukraine</p>
+            <div class="education-section">
+                <h3 class="title">Educaton</h3>
+                <div class="education-item">
+                    <h4 class="education-label">Pre-Azov State Technical University</h4>
+                    <h5 class="education-domain">Process automation</h5>
+                    <p class="education-period">September 1999 - June 2004<span> | </span>Mariupol, Ukraine</p>
                 </div>
-                <div>
-                    <h4><span>EPAM University Program</span></h4>
-                    <h5>Front-End</h5>
-                    <p>September 2020 - January 2021 | Kyiv, Ukraine</p>
+                <div class="education-item">
+                    <h4 class="education-label">EPAM University Program</h4>
+                    <h5 class="education-domain">Front-End</h5>
+                    <p class="education-period">September 2020 - January 2021<span> | </span>Kyiv, Ukraine</p>
                 </div>
-                <div>
-                    <h4>ZarMaraton</h4>
-                    <h5>React menthor guided marathon</h5>
-                    <p>July 2020 | Online</p>
+                <div class="education-item">
+                    <h4 class="education-label">ZarMaraton</h4>
+                    <h5 class="education-domain">React menthor guided marathon</h5>
+                    <p class="education-period">July 2020<span> | </span>Online</p>
                 </div>
             </div>
         </main>
-        <aside>
-            <img src="./assets/images/__KES.jpg" alt="User foto" width="300">
+        <aside class="main-sidebar">
+            <img src="./assets/images/__KES.jpg" alt="User foto" class="user-foto">
             <!-- Contacts -->
-            <div>
+            <div class="sidebar-contacts">
                 <h3>Contacts</h3>
                 <div>
                     <p>
-                        C:
+                        <span class="contact-type">C:</span>
                         <a href="tel:+380973673709">+38 097 367 37 09</a>
                     </p>
                     <p>
-                        E:
+                        <span class="contact-type">E:</span>
                         <a href="mailto:kondratiev.es@gmail.com">kondratiev.es@gmail.com</a>
                     </p>
                 </div>
             </div>
             <!-- Tech Skills -->
-            <div>
+            <div class="sidebar-techskills">
                 <h3>Tech Skills</h3>
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>GIT</li>
-                    <li>WebPack</li>
-                    <li>JavaScript</li>
-                    <li>React.js</li>
-                    <li>Node.js</li>
+                <ul class="sidebar-skills-list">
+                    <li class="sidebar-skill-option"><span class="sidebar-skill-name">HTML5</span></li>
+                    <li class="sidebar-skill-option"><span class="sidebar-skill-name">CSS3</span></li>
+                    <li class="sidebar-skill-option"><span class="sidebar-skill-name">GIT</span></li>
+                    <li class="sidebar-skill-option"><span class="sidebar-skill-name">WebPack</span></li>
+                    <li class="sidebar-skill-option"><span class="sidebar-skill-name">JavaScript</span></li>
+                    <li class="sidebar-skill-option"><span class="sidebar-skill-name">React.js</span></li>
+                    <li class="sidebar-skill-option"><span class="sidebar-skill-name">Node.js</span></li>
                 </ul>
             </div>
             <!-- Soft Skills -->
-            <div>
+            <div class="sidebar-softskills">
                 <h3>Soft Skills</h3>
-                <ul>
-                    <li>Scrum</li>
-                    <li>Agile</li>
-                    <li>GTD</li>
-                    <li>Teamwork</li>
+                <ul class="sidebar-skills-list">
+                    <li class="sidebar-skill-option"><span class="sidebar-skill-name">Scrum</span></li>
+                    <li class="sidebar-skill-option"><span class="sidebar-skill-name">Agile</span></li>
+                    <li class="sidebar-skill-option"><span class="sidebar-skill-name">GTD</span></li>
+                    <li class="sidebar-skill-option"><span class="sidebar-skill-name">Teamwork</span></li>
                 </ul>
             </div>
         </aside>
